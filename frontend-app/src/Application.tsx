@@ -15,7 +15,7 @@ const ContentWrapper = styled.div`
 `;
 
 const Application = () => {
-    const { data, loading, error } = useFetch<ApiResponse[]>('http://localhost:3001/api/data');
+    const { data, loading, error } = useFetch<ApiResponse[]>('http://localhost/api/data');
 
     if (loading) {
         return (
